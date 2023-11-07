@@ -1,0 +1,107 @@
+
+<%- include('partials/header', { title: 'Contact' }) %>
+
+
+<div class="sticky-footer-wrapper">
+    <div class="sticky-footer-content">
+
+        <body>
+            <div class="sticky-footer-wrapper">
+                <div class="sticky-footer-content">
+                    <article>
+                        <h1>Contact Below!</h1>
+                    </article>
+        
+                    <article>
+                        <form action="/send" method="post" name="send_message" class="contact-form">
+                            <div>
+                                <label for="name">Name:</label>
+                                <input type="text" name="name" id="name" placeholder="Your Name" required>
+                            </div>
+                            <div>
+                                <label for="email">Email:</label>
+                                <input type="email" name="email" id="email" placeholder="Your Email" required>
+                            </div>
+                            <div>
+                                <label for="comments">Comments:</label>
+                                <textarea name="comments" id="comments" placeholder="Your Message" cols="60" rows="12" required></textarea>
+                            </div>
+                            <div style="display: none;">
+                                <input type="hidden" name="securityCheck" value="4">
+                            </div>
+                            <div>
+                                <button type="submit" class="submit-button">Send</button>
+                            </div>
+                        </form>
+                    </article>
+                </div>
+            </div>
+        </body>
+
+        <div class="clear"></div>
+    </div>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+    
+        .sticky-footer-wrapper {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+    
+        .sticky-footer-content {
+            flex: 1;
+            padding: 20px;
+            text-align: center;
+        }
+    
+        .contact-form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+    
+        .contact-form div {
+            margin-bottom: 15px;
+        }
+    
+        .contact-form label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+    
+        .contact-form input[type="text"],
+        .contact-form input[type="email"],
+        .contact-form textarea {
+            width: 100%;
+            padding: 8px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    
+        .submit-button {
+            background-color: rgb(131, 0, 0);
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    
+        .submit-button:hover {
+            background-color: #960000;
+        }
+    </style>
+    
+
+</div>
+
+
+
+<%- include('partials/footer') %>

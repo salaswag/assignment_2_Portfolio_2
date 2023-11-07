@@ -1,0 +1,120 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  margin: 0; /* Resets margin */
+}
+
+.header-navbar {
+  margin-top: -50px; /* Ensures its at the top */
+  position: relative; /* Keeps it relative */
+  margin-left: -50px; /* Centers the navbar */
+  margin-right: -50px; /* Centers the navbar */
+}
+
+
+
+
+
+.footer-navbar {
+  margin-bottom: -50px; /* Ensures its at the bottom */
+  position: relative; /* Keeps it relative */
+  margin-left: -50px; /* Centers the navbar */
+  margin-right: -50px; /* Centers the navbar */
+}
+
+/* Removes underline from links and adds space between icon and text */
+.footer-navbar a {
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+}
+
+.footer-navbar a i {
+  margin-right: 5px; /* Space between icon and text */
+}
+
+.sticky-footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.sticky-footer-content {
+  flex: 1;
+}
+
+
+
+
+
+
+.contact-form {
+  color: black;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.contact-form label {
+  display: block;
+  margin-top: 10px;
+  color: black;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: white;
+  color: black;
+}
+
+.contact-form input[type="submit"] {
+  background-color: black; /* Sets the button's background color to black */
+  color: white; /* Sets the text color to white */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.contact-form input[type="submit"]:hover {
+  background-color: #474747; /* A lighter shade of black for hover */
+}
+
+/* Additional styles to show placeholder text */
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #888;
+}
+
+/* Updates styles for the submit button */
+.submit-button {
+  background-color: black; /* Sets the button's background color to black */
+  color: white; /* Sets the text color to white */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease; /* Transitions for smooth background color change */
+}
+
+.submit-button:hover {
+  background-color: #333333; /* A lighter shade when hovered */
+}
+
+.media-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
